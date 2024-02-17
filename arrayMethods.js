@@ -27,4 +27,10 @@ for (let item of previousOWners) {
     console.log(i);
     }
     */
-/* JavaScript All-in-One For Dummies John Wiley & Sons, Inc. 2023 */
+/* JavaScript All-in-One For Dummies John Wiley & Sons, Inc. 2023 
+In practice, for loops are unpopular with experienced JavaScript developers. Like
+using the var keyword, for loops are an old way to do things that shouldn't be
+used. There's usually a more modern and simpler syntax for doing the same thing
+that for loops do. You can learn about some of these in this chapter, and learn
+about other methods that are better for looping through arrays in Chapter 6.
+*/
