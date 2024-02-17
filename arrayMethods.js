@@ -23,10 +23,12 @@ for (let item of previousOWners) {
   myItems = `${myItems} ${item}</br>`;
   document.getElementById("Mydetails").innerHTML = `${myItems}`;
 }
-/*for(let i=1; i <= 100; i++) {
+/*
+for(let i=1; i <= 100; i++) {
     console.log(i);
     }
-    */
+*/
+
 /* JavaScript All-in-One For Dummies John Wiley & Sons, Inc. 2023 
 In practice, for loops are unpopular with experienced JavaScript developers. Like
 using the var keyword, for loops are an old way to do things that shouldn't be
