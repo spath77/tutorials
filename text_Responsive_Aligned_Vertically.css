@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  display: flex; /* i used flex in order to horizontally align my items <h1>... inside the header*/
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  background-color: orange;
+  /* outline: 2px solid blue;*/
+  border-radius: 15px;
+
+  font-size: clamp(0.8rem, 1vw + 0.5rem, 3rem);
+  /* if you want to use vw or vh on font-size make sure to use clamp on
+  so that the font has starting and stopping size and also add a fixed
+  value on it so zoom-in-out works */
+}
+h1 {
+  color: antiquewhite;
+  text-align: center;
+  flex: 1; /* for full width. By default flex uses up as less space as possible */
+
+  /* outline: 1px solid red; */
+}
+
+/*
+ Top 10 CSS One Liners That Will Blow Your Mind
+https://www.youtube.com/watch?v=Xc6G3oV24yE&t=419s 
+https://blog.logrocket.com/15-ways-implement-vertical-alignment-css/
+*/
