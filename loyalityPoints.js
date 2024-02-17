@@ -27,3 +27,5 @@ if (city === "") {
 if (!city) {
   alert("City is a required field.");
 }
+
+/* JavaScript All-in-One For Dummies John Wiley & Sons, Inc. 2023 */

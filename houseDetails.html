@@ -12,9 +12,11 @@
       const house = { sqft: 800, bdRooms: 2, bthRooms: 1 };
       let houseDetails = "<h3>Information about this house</h3>";
       for (let prop in house) {
-        houseDetails = `${prop}:${house[prop]} ${houseDetails} ${prop}:${house[prop]}</br>`;
-        document.getElementById("root").innerHTML = houseDetails;
+        houseDetails = `${houseDetails} ${prop}:${house[prop]}</br>`;
       }
+      document.getElementById("root").innerHTML = houseDetails;
     </script>
   </body>
 </html>
+
+<!-- JavaScript All-in-One For Dummies John Wiley & Sons, Inc. 2023 LISTING 5-2: -->
