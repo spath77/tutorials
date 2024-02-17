@@ -21,18 +21,12 @@ displayLoyaltyPoints(user1);
 displayLoyaltyPoints(user2);
 let city = "";
 
-if (city === "") {
-  alert("City is a required field.");
-}
-if (!city) {
+if (city === "" || !city) {
   alert("City is a required field.");
 }
 
 /*
- JavaScript All-in-One For Dummies John Wiley & Sons, Inc. 2023
-In practice, for loops are unpopular with experienced JavaScript developers. Like
-using the var keyword, for loops are an old way to do things that shouldn't be
-used. There's usually a more modern and simpler syntax for doing the same thing
-that for loops do. You can learn about some of these in this chapter, and learn
-about other methods that are better for looping through arrays in Chapter 6.
+JavaScript All-in-One For Dummies John Wiley & Sons, Inc. 2023
+LISTING 1-3: A JavaScript file
+LISTING 1-4: The HTML document for the game
 */
