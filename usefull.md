@@ -16,6 +16,7 @@ Top 10 CSS One Liners That Will Blow Your Mind https://www.youtube.com/watch?v=X
 ## JavaScript
 
 ```
+https://www.edureka.co/blog/data-types-in-javascript/#difference-1
 https://davidbieber.com/snippets/2020-12-26-pythons-strip-lstrip-and-rstrip-in-javascript/
 
 ```
