@@ -4,3 +4,8 @@ function Vehicle(speed) {
     return `Moving forward at ${this.speed}`;
   };
 }
+
+function makeUnorderedList(array = []) {
+  let listItems = array.map((element) => `<li>${element}</li>`);
+  return `<ul>${listItems.join("")}</ul>`;
+}
