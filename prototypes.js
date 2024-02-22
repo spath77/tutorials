@@ -34,3 +34,5 @@ function makeNumberedList() {
   numberedList += "</ol>";
   return numberedList;
 }
+
+console.log(makeNumberedList("Konstantinos", "Elissabet", "Spiros", "Georgia"));
