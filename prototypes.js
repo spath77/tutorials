@@ -19,7 +19,7 @@ const myTruck = {
 const myCar = {
   speed: 0,
 };
-
+// Passing an object to a function
 function drive(vehicle, speedLimit) {
   vehicle.speed = speedLimit;
   console.log(`Driving at ${vehicle.speed}mph.`);
