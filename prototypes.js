@@ -25,7 +25,7 @@ function drive(vehicle, speedLimit) {
   console.log(`Driving at ${vehicle.speed}mph.`);
 }
 
-// functions arguments
+// functions arguments [you can consider them smt like arrays but can only use .length]
 function makeNumberedList() {
   let numberedList = "<ol>";
   for (let i = 0; i < arguments.length; i++) {
