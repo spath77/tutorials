@@ -1,0 +1,21 @@
+$primary-color: #272727;
+$accent-color: #ff652f;
+$text-color: #fff;
+$font-weights: (
+  "regular": 400,
+  "medium": 500,
+  "bold": 700,
+);
+
+body {
+  background-color: $primary-color;
+  font-weight: map-get($font-weights, regular);
+  color: $text-color;
+}
+
+//----------Sass Tutorial for Beginners - CSS With Superpowers----------
+
+//https://www.youtube.com/watch?v=_a5j7KoflTs&t=486s : variables
+//https://www.youtube.com/watch?v=_a5j7KoflTs&t=603s : maps
+
+//----------------------------------------------------------------------
