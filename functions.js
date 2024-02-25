@@ -41,20 +41,25 @@ driveMyCarOnTheFreeway();
   than return the result of calling the function, bind() returns a new function. You
   can assign this new function to a variable to create a new callable function that
   includes its context and data.*/
-
 //-------------------------------------------------------------------------
 
-const myVan = {
+const Van = {
   speed: 0,
-  operate(speed, callback) {
-    callback(speed);
-    console.log(`my Van is operating at ${this.speed} km/h.`);
-  },
 };
 
-function use(speed) {
+const OtherVan = {
+  speed: 0,
+};
+
+function operate(vehicle, speed) {
   this.speed = speed;
+  vehicle.speed = this.speed * 2;
+  vehicle.type = "suv";
   console.log(`drive the vehicle at ${this.speed} km/h.`);
 }
+operate(Van, 2222222);
+operate(OtherVan, 10);
+console.log(Van.speed);
+console.log(OtherVan.speed);
 
-myVan.operate(55, use);
+operate.call(Van, 99);
