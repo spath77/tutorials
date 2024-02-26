@@ -32,3 +32,13 @@ function refresh() {
   ball.style.left = position + "px";
   ball.style.top = verticalPosition + "px";
 }
+
+document.addEventListener("mousemove", function (e) {
+  let circle = document.getElementById("ball");
+  let left = e.pageX; //e.pageX or e.offsetX
+  let top = e.pageY; //e.pagey or e.offsety
+  circle.style.left = left - 20 + "px";
+  circle.style.top = top - 120 + "px";
+  document.getElementById("coordx").innerHTML = left;
+  document.getElementById("coordy").innerHTML = top;
+});
