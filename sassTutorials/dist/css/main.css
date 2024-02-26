@@ -2,4 +2,18 @@ body {
   background-color: #272727;
   font-weight: 400;
   color: #f5f5f5;
+  outline: 2px solid red;
+}
+
+.main {
+  position: relative;
+}
+
+#ball {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ff652f;
+  position: relative;
+  transition: 220ms ease-out;
 }/*# sourceMappingURL=main.css.map */

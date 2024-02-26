@@ -6,13 +6,27 @@ $font-weights: (
   "medium": 500,
   "bold": 700,
 );
+$ball-dimensions: 30px;
+$ease-transition: 220ms ease-out;
 
 body {
   background-color: $primary-color;
   font-weight: map-get($font-weights, regular);
   color: $text-color;
+  outline: 2px solid red;
+}
+.main {
+  position: relative;
 }
 
+#ball {
+  width: $ball-dimensions;
+  height: $ball-dimensions;
+  border-radius: 50%;
+  background-color: $accent-color;
+  position: relative;
+  transition: $ease-transition;
+}
 //----------Sass Tutorial for Beginners - CSS With Superpowers by freeCodeCamp.org----------
 
 //https://www.youtube.com/watch?v=_a5j7KoflTs&t=135s :Install/Setup Live Sass Compiler VS Code Extension
