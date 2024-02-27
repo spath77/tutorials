@@ -1,4 +1,5 @@
 const ball = document.getElementById("ball");
+const smallBall = document.getElementById("smallBall");
 document.addEventListener("keydown", handleKeyPress);
 
 let position = 0;
@@ -31,14 +32,24 @@ function handleKeyPress(e) {
 function refresh() {
   ball.style.left = position + "px";
   ball.style.top = verticalPosition + "px";
+  smallBall.style.left = position + "px";
+  smallBall.style.top = verticalPosition + "px";
 }
 
 document.addEventListener("mousemove", function (e) {
-  let circle = document.getElementById("ball");
   let left = e.pageX; //e.pageX or e.offsetX
   let top = e.pageY; //e.pagey or e.offsety
-  circle.style.left = left - 20 + "px";
-  circle.style.top = top - 120 + "px";
+  ball.style.left = left - 20 + "px";
+  ball.style.top = top - 120 + "px";
+  smallBall.style.left = left - 30 + "px";
+  smallBall.style.top = top - 130 + "px";
   document.getElementById("coordx").innerHTML = left;
   document.getElementById("coordy").innerHTML = top;
+  ball.style.backgroundColor = `rgba(${left % 255}, ${top % 255}, ${
+    (left + top) % 255
+  },.8)`;
+  smallBall.style.backgroundColor = `rgb(
+  ${(left + 10) % 255},
+  ${top % 255},
+  ${left % 255})`;
 });

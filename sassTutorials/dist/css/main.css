@@ -15,5 +15,14 @@ body {
   border-radius: 50%;
   background-color: #ff652f;
   position: relative;
-  transition: 220ms ease-out;
+  transition: 420ms ease-out;
+}
+
+#smallBall {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ff652f;
+  position: relative;
+  transition: 700ms ease-out;
 }/*# sourceMappingURL=main.css.map */
