@@ -40,9 +40,9 @@ document.addEventListener("mousemove", function (e) {
   let left = e.pageX; //e.pageX or e.offsetX
   let top = e.pageY; //e.pagey or e.offsety
   ball.style.left = left - 20 + "px";
-  ball.style.top = top - 120 + "px";
-  smallBall.style.left = left - 30 + "px";
-  smallBall.style.top = top - 130 + "px";
+  ball.style.top = top - 140 + "px";
+  smallBall.style.left = left - 10 + "px";
+  smallBall.style.top = top - 160 + "px";
   document.getElementById("coordx").innerHTML = left;
   document.getElementById("coordy").innerHTML = top;
   ball.style.backgroundColor = `rgba(${left % 255}, ${top % 255}, ${
